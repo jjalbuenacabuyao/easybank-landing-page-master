@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
 
 /* Box sizing rules */
@@ -26,6 +28,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   overflow-x: hidden;
+  font-size: $fs-base;
 }
 
 /* A elements that don't have a class get default styles */
