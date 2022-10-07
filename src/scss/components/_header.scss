@@ -10,6 +10,13 @@
     inset: 0;
     height: min-content;
     margin-block-start: 5.75rem;
+    background-color: aqua;
+    margin-inline: $m-1;
+    padding: $p-1;
+
+    ul {
+      @include flex(column, initial);
+    }
   }
 
   &__btn {
