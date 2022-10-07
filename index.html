@@ -3,24 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
   <!-- Stylesheet -->
   <link rel="stylesheet" href="src/css/style.css">
   <title>Frontend Mentor | Easybank landing page</title>
 </head>
 <body>
+  <section class="hero">
+    <header class="header">
+      <a href="#" class="header__logo">
+        <img src="src/images/logo.svg" alt="easybank logo">
+      </a>
 
+      <nav class="header__navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </nav>
 
-  <!-- Home
-  About
-  Contact
-  Blog
-  Careers
+      <button class="header__btn">Request Invite</button>
 
-  Request Invite
+      <button data-nav-toggle></button>
+    </header>
+  </section>
 
-
-
+  <!-- 
   Next generation digital banking
 
   Take your financial life online. Your Easybank account will be a one-stop-shop 
