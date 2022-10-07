@@ -1,1 +1,10 @@
 @use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.header {
+  padding: $p-1;
+
+  &__btn {
+    display: none;
+  }
+}
