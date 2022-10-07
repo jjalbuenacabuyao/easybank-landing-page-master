@@ -1,0 +1,7 @@
+@use 'variables' as *;
+
+@mixin flex($direction: row, $justify: initial, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
