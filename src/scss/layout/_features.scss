@@ -1,0 +1,33 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.features {
+  padding: $p-15 $p-base;
+  background-color: $light-grayish-blue;
+  text-align: center;
+
+  &__wrapper {
+    @include flex(column);
+    gap: $g-5;
+  }
+
+  p {
+    color: $grayish-blue;
+  }
+
+  &__intro {
+    @include flex(column);
+    gap: $g-1;
+
+    h2 {
+      font-size: $fs-3;
+      font-weight: 400;
+      padding-inline: $p-2;
+      line-height: 1.3;
+    }
+
+    p {
+      margin-block-end: $m-1;
+    }
+  }
+}
