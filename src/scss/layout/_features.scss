@@ -8,7 +8,7 @@
 
   &__wrapper {
     @include flex(column);
-    gap: $g-5;
+    gap: $g-8;
   }
 
   p {
