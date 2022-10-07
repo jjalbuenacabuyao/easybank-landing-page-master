@@ -16,7 +16,7 @@
     transform: translateY(-200%);
 
     &[data-visible="true"]{
-      transform: translateY(200%);
+      transform: translateY(0%);
     }
 
     ul {
