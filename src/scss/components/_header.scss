@@ -2,7 +2,15 @@
 @use '../utilities/mixins' as *;
 
 .header {
+  @include flex(row, space-between);
   padding: $p-1;
+
+  &__navigation {
+    position: absolute;
+    inset: 0;
+    height: min-content;
+    margin-block-start: 5.75rem;
+  }
 
   &__btn {
     display: none;
