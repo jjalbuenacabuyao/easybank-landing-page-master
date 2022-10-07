@@ -20,7 +20,7 @@
     &__text {
       @include flex(column);
       gap: $g-3;
-      padding: $p-1;
+      padding: $p-1 $p-1 $p-15 $p-1;
       text-align: center;
     }
 
