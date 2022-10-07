@@ -3,6 +3,8 @@
 
 .header {
   @include flex(row, space-between);
+  position: sticky;
+  top: 0;
   padding: $p-1;
   z-index: 5;
   background-color: $white;
