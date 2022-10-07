@@ -1,0 +1,25 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.hero {
+  display: grid;
+
+  &__content,
+  .header {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  &__content {
+    &__illustration{
+      padding-inline: $p-1;
+      background-image: url('../images/bg-intro-mobile.svg');
+      background-repeat: no-repeat;
+    }
+
+    &__text {
+      padding: $p-1;
+      text-align: center;
+    }
+  }
+}
