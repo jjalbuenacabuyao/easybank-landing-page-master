@@ -9,7 +9,7 @@ navToggler.addEventListener('click', () => {
     nav.setAttribute('data-visible', true);
     navToggler.setAttribute('aria-expanded', true);
   } else {
-    nav.setAttribute('data-sisible', false);
+    nav.setAttribute('data-visible', false);
     navToggler.setAttribute('aria-expanded', false);
   }
 })
