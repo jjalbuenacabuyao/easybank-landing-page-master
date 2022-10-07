@@ -1,0 +1,10 @@
+@use '../utilities/variables' as *;
+
+.main-btn {
+  padding: 0.6rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  background-image: linear-gradient(to right, $lime-green, $bright-cyan);
+  font-weight: 400;
+  color: $white;
+}
