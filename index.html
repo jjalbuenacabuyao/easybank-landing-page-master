@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="src/css/style.css">
-  <script defer src="src/js/main.js"></script>
-  <title>Frontend Mentor | Easybank landing page</title>
-</head>
-<body>
-  <section class="hero">
-    <header class="header">
-      <a href="#" class="header__logo">
-        <img src="src/images/logo.svg" alt="easybank logo">
-      </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/images/favicon-32x32.png"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script defer src="src/js/main.js"></script>
+    <title>Frontend Mentor | Easybank landing page</title>
+  </head>
+  <body>
+    <section class="hero">
+      <header class="header">
+        <a href="#" class="header__logo">
+          <img src="src/images/logo.svg" alt="easybank logo" />
+        </a>
 
-      <nav class="header__navigation" data-visible="false">
-        <ul role="list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-      </nav>
+        <nav class="header__navigation" data-visible="false">
+          <ul role="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </nav>
 
-      <button class="header__btn">Request Invite</button>
+        <button class="header__btn">Request Invite</button>
 
-      <button class="header__nav__toggler" aria-expanded="false"></button>
-    </header>
-  </section>
+        <button class="header__nav__toggler" aria-expanded="false"></button>
+      </header>
 
-  <!-- 
-  Next generation digital banking
+      <div class="hero__content">
+        <div class="hero__content__illustration">
+          <img
+            src="src/images/image-mockups.png"
+            alt="images of four mobile phones that are using easybank app"
+          />
+        </div>
 
-  Take your financial life online. Your Easybank account will be a one-stop-shop 
-  for spending, saving, budgeting, investing, and much more.
+        <div class="hero__content__text">
+          <h1>Next generation digital banking</h1>
+          <p>
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
+          </p>
+          <button class="main-btn">Request Invite</button>
+        </div>
+      </div>
+    </section>
 
-  Request Invite
-
-
+    <!--
 
   Why choose Easybank?
 
@@ -99,5 +115,5 @@
   Request Invite
 
   © Easybank. All Rights Reserved -->
-</body>
+  </body>
 </html>
