@@ -18,8 +18,20 @@
     }
 
     &__text {
+      @include flex(column);
+      gap: $g-3;
       padding: $p-1;
       text-align: center;
+    }
+
+    h1 {
+      font-size: $fs-4;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+
+    p{
+      color: $grayish-blue;
     }
   }
 }
