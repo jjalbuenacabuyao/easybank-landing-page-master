@@ -4,16 +4,21 @@
 .header {
   @include flex(row, space-between);
   padding: $p-1;
+  z-index: 5;
+  background-color: $white;
 
   &__navigation {
+    z-index: 2;
     position: absolute;
     inset: 0;
     height: min-content;
+    background-color: $white;
     margin-block-start: 5.75rem;
     margin-inline: $m-1;
     padding: $p-1;
     border-radius: 0.5rem;
     transform: translateY(-200%);
+    transition: 300ms ease-in-out;
 
     &[data-visible="true"]{
       transform: translateY(0%);
