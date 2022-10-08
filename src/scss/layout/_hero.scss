@@ -13,12 +13,13 @@
     &__text {
       @include flex(column);
       gap: $g-3;
-      padding: $p-1 $p-1 $p-15 $p-1;
+      padding: $p-base $p-base $p-15 $p-base;
       text-align: center;
     }
 
     h1 {
       font-size: $fs-4;
+      padding-inline: $p-base;
       line-height: 1.2;
       font-weight: 400;
     }
