@@ -4,11 +4,11 @@
 .header {
   @include flex(row, space-between);
   z-index: 55;
-  position: sticky;
+  width: 100%;
+  position: fixed;
   top: 0;
   padding: $p-1;
   background-color: $white;
-  align-self: start;
 
   &__navigation {
     z-index: -99;
