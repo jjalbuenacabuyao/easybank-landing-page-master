@@ -2,14 +2,6 @@
 @use '../utilities/mixins' as *;
 
 .hero {
-  display: grid;
-
-  &__content,
-  .header {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
   &__content {
     &__illustration{
       padding-inline: $p-1;
