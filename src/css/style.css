@@ -204,7 +204,6 @@ article img {
 .article-preview {
   display: flex;
   flex-direction: column;
-  background-color: var(--light-grayish-blue);
   padding: 2rem;
   gap: 0.5rem;
   border-bottom-left-radius: 0.5rem;
