@@ -1,7 +1,0 @@
-@use '../utilities/variables' as *;
-@use '../utilities/mixins' as *;
-
-.features__feature {
-  @include flex(column);
-  gap: $g-1;
-}
