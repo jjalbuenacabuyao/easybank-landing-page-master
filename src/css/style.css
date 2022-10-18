@@ -129,11 +129,17 @@ picture {
   padding-block: 1.5rem;
   border-radius: 0.5rem;
   transform: translateY(-150%);
+  background-color: var(--white);
+  transition: transform 200ms ease-in;
 }
 
 .nav > ul {
   gap: 1rem;
   text-align: center;
+}
+
+.nav[data-visible="true"]{
+  transform: translateY(0%);
 }
 
 /*Hero*/
