@@ -1,6 +1,6 @@
-const nav = document.querySelector('.header__navigation');
+const nav = document.querySelector('[data-navigation]');
 
-const navToggler = document.querySelector('.header__nav__toggler');
+const navToggler = document.querySelector('[data-navToggler]');
 
 navToggler.addEventListener('click', () => {
   const visibility = nav.getAttribute('data-visible');
