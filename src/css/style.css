@@ -115,8 +115,9 @@ header > nav > ul {
 }
 
 .hero h1 {
-  --fs: 1.875rem;
+  --fs: 2.25rem;
   font-size: var(--fs);
+  font-weight: normal;
   line-height: 1.3;
 }
 
@@ -141,4 +142,45 @@ header > nav > ul {
 .hero-illustration {
   position: relative;
   top: -3rem;
+}
+
+/* Features */
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 3.625rem;
+  padding: 5.5rem 1.5rem;
+  background-color: var(--light-grayish-blue);
+  text-align: center;
+}
+
+.features-intro{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.features h2 {
+  --fs: 1.875rem;
+  font-size: var(--fs);
+  line-height: 1.2;
+}
+
+.features-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2.125rem;
+}
+
+.features-main > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.875rem;
+}
+
+.features-main h3 {
+  line-height: 1;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
