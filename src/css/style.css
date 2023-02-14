@@ -57,6 +57,7 @@ img {
 
 /* Main Styles */
 header {
+  z-index: 50;
   position: absolute;
   top: 0;
   inset-inline: 0;
@@ -95,4 +96,49 @@ header > nav > ul {
   flex-direction: column;
   align-items: center;
   gap: 1.875rem;
+}
+
+/* Hero */
+.hero {
+  padding-inline: 1.5rem;
+  padding-bottom: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero h1 {
+  --fs: 1.875rem;
+  font-size: var(--fs);
+  line-height: 1.3;
+}
+
+.main-btn {
+  line-height: 1;
+  padding-block: 0.875rem;
+  padding-inline: 2rem;
+  border-radius: 2rem;
+  border: none;
+  background-image: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
+  font-weight: 700;
+  color: var(--white);
+}
+
+.blob {
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  z-index: -10;
+}
+
+.hero-illustration {
+  position: relative;
+  top: -3rem;
 }
