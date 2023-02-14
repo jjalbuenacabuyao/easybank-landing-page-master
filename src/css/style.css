@@ -154,6 +154,10 @@ header > nav > ul {
   text-align: center;
 }
 
+.features h2 {
+  font-weight: 400;
+}
+
 .features-intro{
   display: flex;
   flex-direction: column;
@@ -161,7 +165,7 @@ header > nav > ul {
 }
 
 .features h2 {
-  --fs: 1.875rem;
+  --fs: 2rem;
   font-size: var(--fs);
   line-height: 1.2;
 }
