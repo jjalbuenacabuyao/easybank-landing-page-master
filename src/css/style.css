@@ -26,7 +26,7 @@ html {
 body {
   overflow-x: hidden;
   font-family: 'Public Sans', sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: var(--dark-blue);
 }
 
@@ -53,4 +53,46 @@ a:visited {
 img {
   display: block;
   max-width: 100%;
+}
+
+/* Main Styles */
+header {
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white);
+  line-height: 1;
+}
+
+header > .main-btn {
+  display: none;
+}
+
+.nav-toggler {
+  border: none;
+  width: 1.125rem;
+  height: 0.6875rem;
+
+  background-image: url("../../src/images/icon-hamburger.svg");
+}
+
+header > nav {
+  position: absolute;
+  bottom: -1.5rem;
+  inset-inline: 1.5rem;
+  transform: translateY(-100%);
+  background-color: var(--white);
+  padding-block: 2.125rem;
+  box-shadow: 0 0 1.5rem var(--dark-blue);
+  border-radius: 0.5rem;
+}
+
+header > nav > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.875rem;
 }
