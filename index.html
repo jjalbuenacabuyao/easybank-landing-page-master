@@ -38,8 +38,17 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <img src="./src/images/bg-intro-mobile.svg" alt="" aria-hidden="true" class="blob">
-        <img src="./src/images/image-mockups.png" alt="Phone mockups" class="hero-illustration"/>
+        <img
+          src="./src/images/bg-intro-mobile.svg"
+          alt=""
+          aria-hidden="true"
+          class="blob"
+        />
+        <img
+          src="./src/images/image-mockups.png"
+          alt="Phone mockups"
+          class="hero-illustration"
+        />
         <div>
           <h1>Next generation digital banking</h1>
           <p>
@@ -117,12 +126,14 @@
             src="./src/images/image-currency.jpg"
             alt="Images of different currencies"
           />
-          <p>By Claire Robinson</p>
-          <h3>Receive money in any currency with no fees</h3>
-          <p>
-            The world is getting smaller and were becoming more mobile. So why
-            should you be forced to only receive money in a single...
-          </p>
+          <div class="article-description">
+            <p class="name">By Claire Robinson</p>
+            <h3>Receive money in any currency with no fees</h3>
+            <p>
+              The world is getting smaller and were becoming more mobile. So why
+              should you be forced to only receive money in a single...
+            </p>
+          </div>
         </div>
 
         <div>
@@ -130,12 +141,14 @@
             src="./src/images/image-restaurant.jpg"
             alt="Image from a restaurant"
           />
-          <p>By Wilson Hutton</p>
-          <h3>Treat yourself withhout worrying about money</h3>
-          <p>
-            Our simple budgeting feature allows you to seperate out your
-            spending and set realistic limits each month. That means you ...
-          </p>
+          <div class="article-description">
+            <p class="name">By Wilson Hutton</p>
+            <h3>Treat yourself withhout worrying about money</h3>
+            <p>
+              Our simple budgeting feature allows you to seperate out your
+              spending and set realistic limits each month. That means you ...
+            </p>
+          </div>
         </div>
 
         <div>
@@ -143,29 +156,34 @@
             src="./src/images/image-plane.jpg"
             alt="Image from inside a plane"
           />
-          <p>By Wilson Hutton</p>
-          <h3>Take your Easybank card wherever you go</h3>
-          <p>
-            We want you to enjoy your travels. This is why we don't charge any
-            fees on purchases while you're onboard. We'll even show you ...
-          </p>
+          <div class="article-description">
+            <p class="name">By Wilson Hutton</p>
+            <h3>Take your Easybank card wherever you go</h3>
+            <p>
+              We want you to enjoy your travels. This is why we don't charge any
+              fees on purchases while you're onboard. We'll even show you ...
+            </p>
+          </div>
         </div>
 
         <div>
           <img src="./src/images/image-confetti.jpg" alt="Image on confetti" />
-          <p>By Claire Robinson</p>
-          <h3>Our invite-only Beta accounts are now live!</h3>
-          <p>
-            After a lot of hard work by the whole team, we're excited to launch
-            our closed beta. It's easy to request an invite through the site ...
-          </p>
+          <div class="article-description">
+            <p class="name">By Claire Robinson</p>
+            <h3>Our invite-only Beta accounts are now live!</h3>
+            <p>
+              After a lot of hard work by the whole team, we're excited to
+              launch our closed beta. It's easy to request an invite through the
+              site ...
+            </p>
+          </div>
         </div>
       </article>
     </main>
 
     <footer>
       <a href="#">
-        <img src="./src/images/logo.svg" alt="Easybank" />
+        <img src="./src/images/logo-white.svg" alt="Easybank">
       </a>
 
       <ul>
@@ -195,6 +213,21 @@
           </a>
         </li>
       </ul>
+
+      <nav>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </nav>
+
+      <button class="main-btn">Request Invite</button>
+
+      <p>&copy; Easybank. All Rights Reserved</p>
     </footer>
   </body>
 </html>
