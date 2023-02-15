@@ -103,20 +103,18 @@ header > nav > ul {
 
 /* Hero */
 .hero {
-  padding-inline: var(--res-paddimg);
   padding-bottom: 5.5rem;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.hero > div {
+.hero > div:not(".hero-illustration") {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  max-width: 432px;
-  margin: auto;
+  padding-inline: var(--res-paddimg);
 }
 
 .hero h1 {
@@ -142,8 +140,24 @@ header > nav > ul {
 }
 
 .hero-illustration {
+  width: 20.375rem;
+  margin-inline: auto;
   position: relative;
   top: -3rem;
+}
+
+.hero-illustration::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  inset-inline: -50%;
+  bottom: 0;
+  transform: translateX(50% 50%);
+  background-image: url("../images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* Features */
