@@ -119,21 +119,6 @@ header > nav > ul {
   margin: auto;
 }
 
-@media screen and (min-width: 64em) {
-  .hero {
-    padding-right: 0;
-    align-items: flex-start;
-    min-height: 80vh;
-    min-height: 80dvh;
-    justify-content: center;
-  }
-
-  .hero > div {
-    text-align: left;
-    align-items: flex-start;
-  }
-}
-
 .hero h1 {
   --fs: 2.25rem;
   font-size: var(--fs);
@@ -156,43 +141,9 @@ header > nav > ul {
   color: var(--white);
 }
 
-.blob {
-  display: block;
-  position: absolute;
-  top: 0;
-  inset-inline: 0;
-  width: 100%;
-  z-index: -10;
-}
-
 .hero-illustration {
   position: relative;
   top: -3rem;
-}
-
-.blob-desktop {
-  display: none;
-}
-
-@media screen and (min-width: 64em) {
-  .hero-illustration {
-    width: 60%;
-    position: absolute;
-    right: -15%;
-  }
-
-  .blob {
-    display: none;
-  }
-
-  .blob-desktop {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: -50%;
-    width: 100%;
-    z-index: -10;
-  }
 }
 
 /* Features */
