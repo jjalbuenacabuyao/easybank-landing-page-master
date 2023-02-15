@@ -225,6 +225,10 @@ article > div {
   box-shadow: 0 0 8px 5px var(--light-grayish-blue);
 }
 
+article img {
+  width: 100%;
+}
+
 .article-description {
   padding: 2rem;
   display: flex;
