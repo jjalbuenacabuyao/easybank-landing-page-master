@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
 
 :root {
   --dark-blue: hsl(233, 26%, 24%);
@@ -9,7 +9,7 @@
   --very-light-gray: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
 
-  --res-paddimg: clamp(1.5rem, -1.60rem + 13.24vw, 10.3125rem);
+  --res-paddimg: clamp(1.5rem, -1.6rem + 13.24vw, 10.3125rem);
 }
 
 *,
@@ -27,7 +27,7 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 1.125rem;
   color: var(--dark-blue);
 }
@@ -115,6 +115,23 @@ header > nav > ul {
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+  max-width: 432px;
+  margin: auto;
+}
+
+@media screen and (min-width: 64em) {
+  .hero {
+    padding-right: 0;
+    align-items: flex-start;
+    min-height: 80vh;
+    min-height: 80dvh;
+    justify-content: center;
+  }
+
+  .hero > div {
+    text-align: left;
+    align-items: flex-start;
+  }
 }
 
 .hero h1 {
@@ -130,12 +147,17 @@ header > nav > ul {
   padding-inline: 2rem;
   border-radius: 2rem;
   border: none;
-  background-image: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
+  background-image: linear-gradient(
+    to right,
+    var(--lime-green),
+    var(--bright-cyan)
+  );
   font-weight: 700;
   color: var(--white);
 }
 
 .blob {
+  display: block;
   position: absolute;
   top: 0;
   inset-inline: 0;
@@ -146,6 +168,31 @@ header > nav > ul {
 .hero-illustration {
   position: relative;
   top: -3rem;
+}
+
+.blob-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 64em) {
+  .hero-illustration {
+    width: 60%;
+    position: absolute;
+    right: -15%;
+  }
+
+  .blob {
+    display: none;
+  }
+
+  .blob-desktop {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -50%;
+    width: 100%;
+    z-index: -10;
+  }
 }
 
 /* Features */
@@ -163,7 +210,7 @@ header > nav > ul {
   font-weight: 400;
 }
 
-.features-intro{
+.features-intro {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
