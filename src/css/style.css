@@ -8,6 +8,8 @@
   --light-grayish-blue: hsl(220, 16%, 96%);
   --very-light-gray: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
+
+  --res-paddimg: clamp(1.5rem, -1.60rem + 13.24vw, 10.3125rem);
 }
 
 *,
@@ -61,7 +63,8 @@ header {
   position: absolute;
   top: 0;
   inset-inline: 0;
-  padding: 1.5rem;
+  padding-block: 1.5rem;
+  padding-inline: var(--res-paddimg);
   display: flex;
   justify-content: space-between;
   background-color: var(--white);
@@ -100,7 +103,7 @@ header > nav > ul {
 
 /* Hero */
 .hero {
-  padding-inline: 1.5rem;
+  padding-inline: var(--res-paddimg);
   padding-bottom: 5.5rem;
   display: flex;
   flex-direction: column;
@@ -150,7 +153,8 @@ header > nav > ul {
   display: flex;
   flex-direction: column;
   gap: 3.625rem;
-  padding: 5.5rem 1.5rem;
+  padding-block: 5.5rem;
+  padding-inline: var(--res-paddimg);
   background-color: var(--light-grayish-blue);
   text-align: center;
 }
@@ -195,7 +199,8 @@ article {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 5.875rem 1.5rem;
+  padding-block: 5.875rem;
+  padding-inline: var(--res-paddimg);
 }
 
 article h2 {
