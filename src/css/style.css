@@ -189,3 +189,44 @@ header > nav > ul {
   font-size: 1.25rem;
   font-weight: 400;
 }
+
+/* Article */
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5.875rem 1.5rem;
+}
+
+article h2 {
+  text-align: center;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+article h3 {
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+article p {
+  font-size: 0.875rem;
+}
+
+article > div {
+  border-radius: 0.6rem;
+  overflow: hidden;
+  box-shadow: 0 0 8px 5px var(--light-grayish-blue);
+}
+
+.article-description {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.name {
+  font-size: 0.75rem;
+}
