@@ -136,6 +136,7 @@ header > nav > ul {
   position: absolute;
   top: 0;
   inset-inline: 0;
+  width: 100%;
   z-index: -10;
 }
 
