@@ -81,8 +81,9 @@ header > .main-btn {
 }
 
 header > nav {
+  z-index: 100;
   position: absolute;
-  bottom: -1.5rem;
+  top: 5.5rem;
   inset-inline: 1.5rem;
   transform: translateY(-200%);
   background-color: var(--white);
