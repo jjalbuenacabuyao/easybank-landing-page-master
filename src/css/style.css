@@ -60,9 +60,6 @@ img {
 /* Main Styles */
 header {
   z-index: 50;
-  position: absolute;
-  top: 0;
-  inset-inline: 0;
   padding-block: 1.5rem;
   padding-inline: var(--res-paddimg);
   display: flex;
@@ -87,7 +84,7 @@ header > nav {
   position: absolute;
   bottom: -1.5rem;
   inset-inline: 1.5rem;
-  transform: translateY(-100%);
+  transform: translateY(-200%);
   background-color: var(--white);
   padding-block: 2.125rem;
   box-shadow: 0 0 1.5rem var(--dark-blue);
