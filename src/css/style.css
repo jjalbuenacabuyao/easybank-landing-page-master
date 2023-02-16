@@ -59,6 +59,7 @@ img {
 
 /* Main Styles */
 header {
+  position: relative;
   z-index: 50;
   padding-block: 1.5rem;
   padding-inline: var(--res-paddimg);
@@ -102,11 +103,18 @@ header > nav > ul {
 
 /* Hero */
 .hero {
-  padding-bottom: 5.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  padding-bottom: clamp(5.5rem, 3.73943661971831rem + 7.511737089201878vw, 10.5rem);
   text-align: center;
+  overflow-x: hidden;
+}
+
+@media screen and (width >= 64em) {
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    padding-block: clamp(5.5rem, 3.73943661971831rem + 7.511737089201878vw, 10.5rem);
+  }
 }
 
 .copy {
@@ -115,6 +123,16 @@ header > nav > ul {
   align-items: center;
   gap: 1.5rem;
   padding-inline: var(--res-paddimg);
+  padding-top: clamp(17.625rem, 6.775528169014086rem + 46.29107981220657vw, 48.4375rem);
+}
+
+@media screen and (width >= 64em) {
+  .copy {
+    padding-right: 0;
+    padding-top: 0;
+    text-align: left;
+    align-items: flex-start;
+  }
 }
 
 .hero h1 {
@@ -140,16 +158,37 @@ header > nav > ul {
 }
 
 .hero-illustration {
-  position: relative;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
   height: clamp(17.625rem, 6.775528169014086rem + 46.29107981220657vw, 48.4375rem);
+  background-image: url("../images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
 }
 
-.hero-illustration img {
-  width: 100%;
-  height: 100%;
+@media screen and (width >= 48em) {
+  .hero-illustration {
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-position: left bottom;
+    background-size: 150%;
+  }
+}
+
+@media screen and (width >= 64em) {
+  .hero-illustration {
+    width: 50%;
+    top: 0;
+    right: 0;
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-position: left bottom;
+    background-size: 200%;
+  }
 }
 
 .hero-illustration::before{
+  z-index: 55;
   content: "";
   position: absolute;
   inset: 0;
@@ -160,6 +199,14 @@ header > nav > ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
+}
+
+@media screen and (width >= 64em){
+  .hero-illustration::before{
+    inset-block: 0;
+    right: -15%;
+    left: auto;
+  }
 }
 
 /* Features */
