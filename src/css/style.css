@@ -64,6 +64,7 @@ header {
   padding-inline: var(--res-paddimg);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: var(--white);
   line-height: 1;
 }
@@ -140,11 +141,12 @@ header > nav > ul {
 
 .hero-illustration {
   position: relative;
-  min-height: 17.625rem;
-  background-image: url("../images/bg-intro-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  height: clamp(17.625rem, 6.775528169014086rem + 46.29107981220657vw, 48.4375rem);
+}
+
+.hero-illustration img {
+  width: 100%;
+  height: 100%;
 }
 
 .hero-illustration::before{
@@ -152,7 +154,7 @@ header > nav > ul {
   position: absolute;
   inset: 0;
   margin: auto;
-  width: 20.4375rem;
+  width: clamp(20.4375rem, 12.448943661971832rem + 34.08450704225352vw, 43.125rem);
   height: 100%;
   background-image: url("../images/image-mockups.png");
   background-repeat: no-repeat;
