@@ -103,10 +103,11 @@ header > nav > ul {
   padding-bottom: 5.5rem;
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   text-align: center;
 }
 
-.hero > div:not(".hero-illustration") {
+.copy {
   display: flex;
   flex-direction: column;
   align-items: center;
