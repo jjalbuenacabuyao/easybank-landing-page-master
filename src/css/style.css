@@ -244,6 +244,13 @@ header > nav > ul {
   gap: 1.875rem;
 }
 
+@media screen and (width >= 48em) {
+  .features-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .features-main h3 {
   line-height: 1;
   font-size: 1.25rem;
@@ -259,11 +266,28 @@ article {
   padding-inline: var(--res-padding);
 }
 
+@media screen and (width >= 48em){
+  article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+article img {
+  object-fit: cover;
+}
+
 article h2 {
   text-align: center;
   line-height: 1;
   font-weight: 400;
   font-size: clamp(2rem, 1.91rem + 0.38vw, 2.25rem);
+}
+
+@media screen and (width >= 48em){
+  article h2 {
+    grid-column: span 2;
+  }
 }
 
 article h3 {
@@ -283,6 +307,7 @@ article > div {
 
 article img {
   width: 100%;
+  height: 12.5rem;
 }
 
 .article-description {
@@ -307,9 +332,30 @@ footer {
   font-size: 1rem;
 }
 
+@media screen and (width >= 48em){
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    grid-template-rows: auto 1fr;
+    padding-inline: var(--res-padding);
+    row-gap: 1rem;
+    align-items: start;
+  }
+  footer > a {
+    grid-column: span 2;
+  }
+}
+
 footer > ul {
   display: flex;
   gap: 1rem;
+}
+
+@media screen and (width >= 48em) {
+  footer > ul {
+    grid-row-start: 2;
+    grid-column: span 2;
+  }
 }
 
 footer > nav {
@@ -322,4 +368,29 @@ footer > nav > ul {
   flex-direction: column;
   align-items: center;
   gap: 1.25rem;
+}
+
+@media screen and (width >= 48em){
+  footer > nav {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  footer > nav > ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer .main-btn {
+    grid-column-start: -2;
+    align-self: start;
+    justify-self: start;
+    margin-block: 1rem;
+  }
+
+  footer > p {
+    grid-row-start: 3;
+    grid-column: span 2;
+    align-self: center;
+  }
 }
