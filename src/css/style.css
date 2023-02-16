@@ -322,4 +322,40 @@ article img {
 }
 
 /* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  background-color: var(--dark-blue);
+  padding-block: 2.5rem;
+  color: var(--white);
+  align-items: center;
+  text-align: center;
+}
 
+.icons,
+footer > nav,
+footer .cta,
+footer > nav > * {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons,
+footer .cta{
+  gap: 2rem;
+}
+
+.icons > ul {
+  display: flex;
+  gap: 0.875rem;
+}
+
+footer > nav {
+  line-height: 1;
+  gap: 1.375rem;
+}
+
+footer > nav > * {
+  gap: 1.375rem;
+}
