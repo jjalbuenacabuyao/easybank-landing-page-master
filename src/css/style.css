@@ -166,6 +166,7 @@ header > nav > ul {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 @media screen and (width >= 48em) {
@@ -183,7 +184,6 @@ header > nav > ul {
     right: 0;
     background-image: url("../images/bg-intro-desktop.svg");
     background-position: left bottom;
-    background-size: 200%;
   }
 }
 
