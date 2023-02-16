@@ -137,24 +137,25 @@ header > nav > ul {
 }
 
 .hero-illustration {
-  width: 20.375rem;
-  margin-inline: auto;
   position: relative;
-  top: -3rem;
-}
-
-.hero-illustration::before {
-  content: "";
-  width: 100%;
-  position: absolute;
-  top: 0;
-  inset-inline: -50%;
-  bottom: 0;
-  transform: translateX(50% 50%);
+  min-height: 17.625rem;
   background-image: url("../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
-  background-position: center;
+}
+
+.hero-illustration::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 20.4375rem;
+  height: 100%;
+  background-image: url("../images/image-mockups.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
 }
 
 /* Features */
