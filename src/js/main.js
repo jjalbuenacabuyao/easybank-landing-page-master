@@ -8,8 +8,10 @@ navToggler.addEventListener('click', () => {
   if (visibility === 'false') {
     nav.setAttribute('data-visible', true);
     navToggler.setAttribute('aria-expanded', true);
+    document.body.style.overflowY = "hidden";
   } else {
     nav.setAttribute('data-visible', false);
     navToggler.setAttribute('aria-expanded', false);
+    document.body.style.overflowY = "unset";
   }
 })
