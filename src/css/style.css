@@ -225,7 +225,7 @@ header > nav > ul {
   gap: 1.5rem;
 }
 
-@media screen and (width <= 90em) {
+@media screen and (width >= 90em) {
   .features-intro {
     text-align: left;
   }
@@ -261,7 +261,7 @@ header > nav > ul {
   }
 }
 
-@media screen and (width <= 90em){
+@media screen and (width >= 90em){
   .features-main {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -294,7 +294,7 @@ article {
   }
 }
 
-@media screen and (width <= 90em){
+@media screen and (width >= 90em){
   article {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -317,7 +317,7 @@ article h2 {
   }
 }
 
-@media screen and (width <= 90em){
+@media screen and (width >= 90em){
   article h2 {
     grid-column: span 4;
     text-align: left;
@@ -375,7 +375,7 @@ footer {
   }
 }
 
-@media screen and (width <= 90em){
+@media screen and (width >= 90em){
   footer {
     grid-template-columns: auto 1fr auto;
     column-gap: 8.125rem;
@@ -422,7 +422,7 @@ footer > nav {
   }
 }
 
-@media screen and (width <= 90em){
+@media screen and (width >= 90em){
   footer > nav {
     grid-column: 2;
     justify-content: flex-start;
