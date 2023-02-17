@@ -250,7 +250,7 @@ header > nav > ul {
 .features {
   display: flex;
   flex-direction: column;
-  gap: 3.625rem;
+  gap: clamp(3.625rem, 3.23rem + 1.69vw, 4.75rem);
   padding-block: clamp(5.5rem, 5.02rem + 2.07vw, 6.875rem);
   padding-inline: var(--res-padding);
   background-color: var(--light-grayish-blue);
@@ -260,7 +260,7 @@ header > nav > ul {
 .features-intro {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: clamp(1.5rem, 1.24rem + 1.13vw, 2.25rem);
 }
 
 @media screen and (width >= 90em) {
@@ -289,7 +289,7 @@ header > nav > ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.875rem;
+  gap: clamp(1.875rem, 1.55rem + 1.41vw, 2.8125rem);
 }
 
 @media screen and (width >= 48em) {
@@ -320,7 +320,8 @@ header > nav > ul {
 article {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  column-gap: 2rem;
+  row-gap: clamp(2rem, 1.43rem + 2.44vw, 3.625rem);
   padding-block: clamp(5.5rem, 5.02rem + 2.07vw, 6.875rem);
   padding-inline: var(--res-padding);
 }
