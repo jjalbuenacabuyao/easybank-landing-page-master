@@ -60,7 +60,7 @@ img {
 /* Main Styles */
 header {
   position: relative;
-  z-index: 999;
+  z-index: 200;
   padding-block: 1.5rem;
   padding-inline: var(--res-padding);
   display: flex;
@@ -88,6 +88,12 @@ header > .main-btn {
   background-image: url("../images/icon-close.svg");
 }
 
+@media screen and (width >= 64em){
+  .nav-toggler {
+    display: none;
+  }
+}
+
 header > nav {
   z-index: 100;
   position: absolute;
@@ -110,6 +116,27 @@ header > nav > ul {
   flex-direction: column;
   align-items: center;
   gap: 1.875rem;
+}
+
+@media screen and (width >= 64em) {
+  header {
+    padding-block: 1.125rem;
+  }
+
+  header > nav {
+    position: static;
+    transform: none;
+    box-shadow: none;
+    padding-block: 0;
+  }
+
+  header > nav > ul {
+    flex-direction: row;
+  }
+
+  header > .main-btn {
+    display: block;
+  }
 }
 
 /* Hero */
