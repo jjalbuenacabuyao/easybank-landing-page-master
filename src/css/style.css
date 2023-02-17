@@ -113,7 +113,7 @@ header > nav > ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
-    padding-block: clamp(5.5rem, 3.73943661971831rem + 7.511737089201878vw, 10.5rem);
+    padding-block: clamp(5.5rem, 4.13556338028169rem + 5.821596244131455vw, 9.375rem);
   }
 }
 
