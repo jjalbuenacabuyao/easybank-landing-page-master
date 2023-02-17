@@ -213,7 +213,7 @@ header > nav > ul {
   display: flex;
   flex-direction: column;
   gap: 3.625rem;
-  padding-block: 5.5rem;
+  padding-block: clamp(5.5rem, 5.015845070422535rem + 2.0657276995305165vw, 6.875rem);
   padding-inline: var(--res-padding);
   background-color: var(--light-grayish-blue);
   text-align: center;
@@ -283,7 +283,7 @@ article {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-block: 5.875rem;
+  padding-block: clamp(5.5rem, 5.015845070422535rem + 2.0657276995305165vw, 6.875rem);
   padding-inline: var(--res-padding);
 }
 
@@ -361,7 +361,7 @@ footer {
   flex-direction: column;
   gap: 2.25rem;
   background-color: var(--dark-blue);
-  padding-block: 2.5rem;
+  padding-block: clamp(2.5rem, 2.367957746478873rem + 0.5633802816901408vw, 2.875rem);;
   color: var(--white);
   align-items: center;
   text-align: center;
