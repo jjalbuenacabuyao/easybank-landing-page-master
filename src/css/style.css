@@ -92,7 +92,7 @@ header > nav {
   z-index: 100;
   position: absolute;
   top: 5.5rem;
-  inset-inline: 1.5rem;
+  inset-inline: var(--res-padding);
   transform: translateY(-200%);
   background-color: var(--white);
   padding-block: 2.125rem;
