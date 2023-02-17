@@ -313,6 +313,7 @@ header > nav > ul {
 .features-main h3 {
   line-height: 1;
   font-size: 1.25rem;
+  font-size: clamp(1.25rem, 1.16rem + 0.38vw, 1.5rem);
   font-weight: 400;
 }
 
