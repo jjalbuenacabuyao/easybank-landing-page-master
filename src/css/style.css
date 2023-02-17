@@ -113,7 +113,7 @@ header > nav > ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
-    padding-block: clamp(5.5rem, 4.13556338028169rem + 5.821596244131455vw, 9.375rem);
+    padding-block: clamp(5.5rem, 4.14rem + 5.82vw, 9.375rem);
   }
 }
 
@@ -123,7 +123,7 @@ header > nav > ul {
   align-items: center;
   gap: clamp(1.5rem, 1.32rem + 0.75vw, 2rem);
   padding-inline: var(--res-padding);
-  padding-top: clamp(17.625rem, 6.775528169014086rem + 46.29107981220657vw, 48.4375rem);
+  padding-top: clamp(17.625rem, 6.78rem + 46.29vw, 48.4375rem);
 }
 
 @media screen and (width >= 64em) {
@@ -160,7 +160,7 @@ header > nav > ul {
   position: absolute;
   z-index: 10;
   width: 100%;
-  height: clamp(17.625rem, 6.775528169014086rem + 46.29107981220657vw, 48.4375rem);
+  height: clamp(17.625rem, 6.78rem + 46.29vw, 48.4375rem);
   background-image: url("../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -192,7 +192,7 @@ header > nav > ul {
   position: absolute;
   inset: 0;
   margin: auto;
-  width: clamp(20.4375rem, 12.448943661971832rem + 34.08450704225352vw, 43.125rem);
+  width: clamp(20.4375rem, 12.45rem + 34.08vw, 43.125rem);
   height: 100%;
   background-image: url("../images/image-mockups.png");
   background-repeat: no-repeat;
@@ -213,7 +213,7 @@ header > nav > ul {
   display: flex;
   flex-direction: column;
   gap: 3.625rem;
-  padding-block: clamp(5.5rem, 5.015845070422535rem + 2.0657276995305165vw, 6.875rem);
+  padding-block: clamp(5.5rem, 5.02rem + 2.07vw, 6.875rem);
   padding-inline: var(--res-padding);
   background-color: var(--light-grayish-blue);
   text-align: center;
@@ -283,7 +283,7 @@ article {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-block: clamp(5.5rem, 5.015845070422535rem + 2.0657276995305165vw, 6.875rem);
+  padding-block: clamp(5.5rem, 5.02rem + 2.07vw, 6.875rem);
   padding-inline: var(--res-padding);
 }
 
@@ -361,7 +361,7 @@ footer {
   flex-direction: column;
   gap: 2.25rem;
   background-color: var(--dark-blue);
-  padding-block: clamp(2.5rem, 2.367957746478873rem + 0.5633802816901408vw, 2.875rem);;
+  padding-block: clamp(2.5rem, 2.37rem + 0.56vw, 2.875rem);;
   color: var(--white);
   align-items: center;
   text-align: center;
